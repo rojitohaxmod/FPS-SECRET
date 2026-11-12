@@ -1,10 +1,10 @@
-```html
+
 <!DOCTYPE html>
 <html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FPS SECRET - Store & Mods</title>
+    <title>FPS SECRET - GitHub Store & Mods</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Orbitron & Rajdhani -->
@@ -20,12 +20,12 @@
                 extend: {
                     colors: {
                         cyber: {
-                            bg: '#050914',
-                            card: '#0d1322',
-                            inner: '#131b2e',
-                            border: 'rgba(0, 168, 255, 0.25)',
+                            bg: '#030712',
+                            card: '#0b1120',
+                            inner: '#111827',
+                            border: 'rgba(0, 168, 255, 0.3)',
                             primary: '#00a8ff',
-                            secondary: '#0077ff',
+                            secondary: '#0066ff',
                             light: '#38bdf8',
                             glow: 'rgba(0, 168, 255, 0.4)',
                         }
@@ -42,31 +42,27 @@
 
     <style>
         body {
-            background-color: #050914;
+            background-color: #030712;
             color: #f1f5f9;
             font-family: 'Rajdhani', 'Inter', sans-serif;
             min-height: 100vh;
             overflow-x: hidden;
         }
 
-        /* Ambient background grid pattern and radial glow */
+        /* Cybernetic grid pattern background */
         .grid-bg {
-            background-color: #050914;
+            background-color: #030712;
             background-image: 
-                radial-gradient(circle at 50% -10%, rgba(0, 168, 255, 0.25), transparent 60%),
-                radial-gradient(circle at 50% 60%, rgba(0, 119, 255, 0.1), transparent 70%),
-                linear-gradient(rgba(0, 168, 255, 0.04) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 168, 255, 0.04) 1px, transparent 1px);
+                radial-gradient(circle at 50% -10%, rgba(0, 168, 255, 0.28), transparent 55%),
+                radial-gradient(circle at 50% 70%, rgba(0, 102, 255, 0.12), transparent 70%),
+                linear-gradient(rgba(0, 168, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 168, 255, 0.05) 1px, transparent 1px);
             background-size: 100% 100%, 100% 100%, 28px 28px, 28px 28px;
         }
 
-        /* Neon Glow Utility Effects */
+        /* Neon utilities */
         .neon-box-glow {
-            box-shadow: 0 0 20px rgba(0, 168, 255, 0.25), inset 0 0 15px rgba(0, 168, 255, 0.1);
-        }
-
-        .neon-border {
-            border: 1px solid rgba(0, 168, 255, 0.35);
+            box-shadow: 0 0 25px rgba(0, 168, 255, 0.22), inset 0 0 15px rgba(0, 168, 255, 0.08);
         }
 
         .neon-border-highlight {
@@ -83,11 +79,11 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #050914;
+            background: #030712;
         }
         ::-webkit-scrollbar-thumb {
-            background: #0d1322;
-            border: 1px solid #00a8ff55;
+            background: #0b1120;
+            border: 1px solid rgba(0, 168, 255, 0.3);
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
@@ -97,9 +93,9 @@
 </head>
 <body class="grid-bg min-h-screen flex flex-col justify-between items-center px-3 sm:px-6 py-4 sm:py-8 antialiased selection:bg-cyber-primary selection:text-black">
 
-    <!-- TOP HEADER -->
-    <header class="w-full max-w-2xl flex items-center justify-between mb-6 sm:mb-10">
-        <!-- Brand Logo + Title -->
+    <!-- HEADER DE LA PÁGINA DE GITHUB -->
+    <header class="w-full max-w-2xl flex items-center justify-between mb-6 sm:mb-8">
+        <!-- Logo con mira y títulos -->
         <div class="flex items-center gap-3">
             <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-cyber-card border border-cyber-primary/40 flex items-center justify-center neon-box-glow relative overflow-hidden group">
                 <div class="absolute inset-0 bg-cyber-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -109,19 +105,19 @@
                 <h1 class="font-orbitron font-extrabold text-xl sm:text-2xl tracking-wider text-white flex items-center gap-2 leading-none">
                     FPS SECRET
                 </h1>
-                <span class="font-orbitron text-[10px] sm:text-xs tracking-widest text-cyber-primary font-bold">STORE & MODS</span>
+                <span class="font-orbitron text-[10px] sm:text-xs tracking-widest text-cyber-primary font-bold">GITHUB STORE & MODS</span>
             </div>
         </div>
 
-        <!-- Action Badges -->
+        <!-- Botón GitHub + Badge de Ping -->
         <div class="flex items-center gap-2 sm:gap-3">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
-               class="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-cyber-card/80 border border-cyber-primary/30 text-xs sm:text-sm font-orbitron font-semibold text-gray-300 hover:text-white hover:border-cyber-primary hover:bg-cyber-primary/10 transition-all duration-300 active:scale-95">
+               class="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-cyber-card/90 border border-cyber-primary/40 text-xs sm:text-sm font-orbitron font-semibold text-gray-300 hover:text-white hover:border-cyber-primary hover:bg-cyber-primary/10 transition-all duration-300 active:scale-95">
                 <i class="fa-brands fa-github text-cyber-primary text-sm"></i>
                 <span>GITHUB</span>
             </a>
 
-            <div class="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-cyber-card/80 border border-cyber-primary/30 text-xs sm:text-sm font-orbitron font-semibold text-cyber-light">
+            <div class="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-cyber-card/90 border border-cyber-primary/40 text-xs sm:text-sm font-orbitron font-semibold text-cyber-light">
                 <span class="relative flex h-2.5 w-2.5">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
@@ -131,22 +127,23 @@
         </div>
     </header>
 
-    <!-- MAIN CENTRAL CARD -->
+    <!-- TARJETA PRINCIPAL ESTILO GLASS -->
     <main class="w-full max-w-2xl bg-cyber-card/90 backdrop-blur-md rounded-3xl p-4 sm:p-7 border border-cyber-primary/30 shadow-2xl shadow-cyber-primary/10 neon-box-glow mb-8 transition-all">
         
-        <!-- MAIN CARD HEADER ICON & TITLE -->
+        <!-- ENCABEZADO CON ICONO DE RAYO -->
         <div class="flex flex-col items-center text-center mb-6 pt-2">
-            <!-- Glowing Circle Icon -->
             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-cyber-inner border-2 border-cyber-primary/60 flex items-center justify-center mb-4 neon-box-glow relative">
-                <div class="absolute inset-0 rounded-full bg-cyber-primary/10 animate-ping opacity-25"></div>
-                <i class="fa-solid fa-bolt-lightning text-cyber-primary text-2xl sm:text-3xl filter drop-shadow-[0_0_8px_rgba(0,168,255,0.8)]"></i>
+                <div class="absolute inset-0 rounded-full bg-cyber-primary/15 animate-ping opacity-30"></div>
+                <i class="fa-solid fa-bolt-lightning text-cyber-primary text-2xl sm:text-3xl filter drop-shadow-[0_0_10px_rgba(0,168,255,0.8)]"></i>
             </div>
             
             <h2 class="font-orbitron font-black text-2xl sm:text-3xl tracking-wide text-white mb-1">
-                PRECIOS DE FPS SECRET
+                FPS SECRET
             </h2>
-            <p class="text-xs sm:text-sm text-cyber-light font-medium tracking-wide flex items-center justify-center gap-1.5">
+            <p class="text-xs sm:text-sm text-cyber-light font-medium tracking-wide flex items-center justify-center gap-1.5 flex-wrap">
                 <span>Catálogo Oficial</span>
+                <span class="text-gray-500">•</span>
+                <span>Precios por País</span>
                 <span class="text-gray-500">•</span>
                 <span class="text-emerald-400 font-semibold flex items-center gap-1">
                     <i class="fa-solid fa-circle-check text-xs"></i> TENEMOS REFE 🔥
@@ -154,39 +151,161 @@
             </p>
         </div>
 
-        <!-- COUNTRY FILTER TABS -->
+        <!-- FILTRO INTERACTIVO DE PAÍSES Y MONEDAS -->
         <div class="mb-6">
             <div class="text-xs font-orbitron text-gray-400 mb-2.5 text-center uppercase tracking-wider flex items-center justify-center gap-2">
-                <i class="fa-solid fa-earth-americas text-cyber-primary"></i> Filtrar moneda por país:
+                <i class="fa-solid fa-earth-americas text-cyber-primary"></i> Seleccionar tu Moneda / País:
             </div>
-            <div class="flex items-center justify-center flex-wrap gap-1.5 sm:gap-2 p-1.5 bg-cyber-inner/80 rounded-2xl border border-cyber-primary/20">
+            <div class="flex items-center justify-center flex-wrap gap-1.5 sm:gap-2 p-1.5 bg-cyber-inner/90 rounded-2xl border border-cyber-primary/20">
                 <button onclick="filterCountry('ALL')" id="tab-ALL" class="country-tab active-tab px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 bg-cyber-primary text-black font-orbitron">
                     🌎 Todos
                 </button>
                 <button onclick="filterCountry('ARS')" id="tab-ARS" class="country-tab px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 text-gray-300 hover:text-white hover:bg-cyber-card font-orbitron">
-                    🇦🇷 Argentina
+                    🇦🇷 ARS
                 </button>
                 <button onclick="filterCountry('VES')" id="tab-VES" class="country-tab px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 text-gray-300 hover:text-white hover:bg-cyber-card font-orbitron">
-                    🇻🇪 Venezuela
+                    🇻🇪 VES
                 </button>
                 <button onclick="filterCountry('PEN')" id="tab-PEN" class="country-tab px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 text-gray-300 hover:text-white hover:bg-cyber-card font-orbitron">
-                    🇵🇪 Perú
+                    🇵🇪 PEN
                 </button>
                 <button onclick="filterCountry('COP')" id="tab-COP" class="country-tab px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 text-gray-300 hover:text-white hover:bg-cyber-card font-orbitron">
-                    🇨🇴 Colombia
+                    🇨🇴 COP
                 </button>
             </div>
         </div>
 
-        <!-- PRODUCT CARDS LIST -->
+        <!-- LISTA DE PRODUCTOS Y OFERTAS CON ENLACES EXACTOS DE WHATSAPP -->
         <div class="space-y-4" id="productList">
 
-            <!-- PRODUCT 1: 120 FPS -->
+            <!-- PRODUCTO 1: 120 FPS -->
             <div class="product-card bg-cyber-inner rounded-2xl p-4 sm:p-5 border border-cyber-primary/25 hover:border-cyber-primary/60 transition-all duration-300 relative group overflow-hidden">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div class="flex items-start sm:items-center gap-3">
                         <div class="w-10 h-10 rounded-xl bg-cyber-card border border-cyber-primary/40 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                             <span class="text-xl">🚀</span>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-orbitron font-bold text-lg text-white group-hover:text-cyber-primary transition-colors">120 FPS</h3>
+                                <span class="text-[10px] font-orbitron px-2 py-0.5 rounded-full bg-cyber-primary/10 border border-cyber-primary/30 text-cyber-light">+54 9 381 630-3518</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Optimización de fluidez y rendimiento máximo de frames</p>
+                        </div>
+                    </div>
+                    <button onclick="triggerPurchase('120 FPS')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyber-primary to-cyber-secondary text-black font-orbitron font-black text-xs tracking-wider uppercase hover:shadow-lg hover:shadow-cyber-primary/40 transition-all active:scale-95 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>PEDIR</span>
+                    </button>
+                </div>
+
+                <!-- Cuadrícula de Precios -->
+                <div class="mt-4 pt-3 border-t border-cyber-primary/15 grid grid-cols-2 sm:grid-cols-4 gap-2">
+                    <div class="price-item price-ARS bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇦🇷 ARS</span>
+                        <span class="font-orbitron font-bold text-cyber-light">5K</span>
+                    </div>
+                    <div class="price-item price-VES bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇻🇪 VES</span>
+                        <span class="font-orbitron font-bold text-cyber-light">2.924</span>
+                    </div>
+                    <div class="price-item price-PEN bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇵🇪 PEN</span>
+                        <span class="font-orbitron font-bold text-cyber-light">11</span>
+                    </div>
+                    <div class="price-item price-COP bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇨🇴 COP</span>
+                        <span class="font-orbitron font-bold text-cyber-light">10.670</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 2: PACK PRO DE HACKS DE FREE FIRE -->
+            <div class="product-card bg-cyber-inner rounded-2xl p-4 sm:p-5 border border-cyber-primary/25 hover:border-cyber-primary/60 transition-all duration-300 relative group overflow-hidden">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div class="flex items-start sm:items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyber-card border border-cyber-primary/40 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                            <span class="text-xl">🎮</span>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-orbitron font-bold text-lg text-white group-hover:text-cyber-primary transition-colors">PACK PRO DE HACKS DE FREE FIRE</h3>
+                                <span class="text-[10px] font-orbitron px-2 py-0.5 rounded-full bg-cyber-primary/10 border border-cyber-primary/30 text-cyber-light">+58 414-5558889</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Ventajas exclusivas y configuraciones pro para Free Fire</p>
+                        </div>
+                    </div>
+                    <button onclick="triggerPurchase('PACK PRO DE HACKS DE FREE FIRE')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyber-primary to-cyber-secondary text-black font-orbitron font-black text-xs tracking-wider uppercase hover:shadow-lg hover:shadow-cyber-primary/40 transition-all active:scale-95 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>PEDIR</span>
+                    </button>
+                </div>
+
+                <!-- Cuadrícula de Precios -->
+                <div class="mt-4 pt-3 border-t border-cyber-primary/15 grid grid-cols-2 sm:grid-cols-4 gap-2">
+                    <div class="price-item price-ARS bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇦🇷 ARS</span>
+                        <span class="font-orbitron font-bold text-cyber-light">8K</span>
+                    </div>
+                    <div class="price-item price-VES bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇻🇪 VES</span>
+                        <span class="font-orbitron font-bold text-cyber-light">4.678</span>
+                    </div>
+                    <div class="price-item price-PEN bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇵🇪 PEN</span>
+                        <span class="font-orbitron font-bold text-cyber-light">17,6</span>
+                    </div>
+                    <div class="price-item price-COP bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇨🇴 COP</span>
+                        <span class="font-orbitron font-bold text-cyber-light">17.072</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 3: MODIFICACIONES DE CELULARES -->
+            <div class="product-card bg-cyber-inner rounded-2xl p-4 sm:p-5 border border-cyber-primary/25 hover:border-cyber-primary/60 transition-all duration-300 relative group overflow-hidden">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div class="flex items-start sm:items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyber-card border border-cyber-primary/40 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                            <span class="text-xl">📱</span>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-orbitron font-bold text-lg text-white group-hover:text-cyber-primary transition-colors">MODIFICACIONES DE CELULARES</h3>
+                                <span class="text-[10px] font-orbitron px-2 py-0.5 rounded-full bg-cyber-primary/10 border border-cyber-primary/30 text-cyber-light">+54 9 3525 61-1530</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Optimizaciones avanzadas de sistema y sensibilidad móvil</p>
+                        </div>
+                    </div>
+                    <button onclick="triggerPurchase('MODIFICACIONES DE CELULARES')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyber-primary to-cyber-secondary text-black font-orbitron font-black text-xs tracking-wider uppercase hover:shadow-lg hover:shadow-cyber-primary/40 transition-all active:scale-95 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>PEDIR</span>
+                    </button>
+                </div>
+
+                <!-- Cuadrícula de Precios -->
+                <div class="mt-4 pt-3 border-t border-cyber-primary/15 grid grid-cols-2 sm:grid-cols-4 gap-2">
+                    <div class="price-item price-ARS bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇦🇷 ARS</span>
+                        <span class="font-orbitron font-bold text-cyber-light">10K</span>
+                    </div>
+                    <div class="price-item price-VES bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇻🇪 VES</span>
+                        <span class="font-orbitron font-bold text-cyber-light">5.848</span>
+                    </div>
+                    <div class="price-item price-PEN bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇵🇪 PEN</span>
+                        <span class="font-orbitron font-bold text-cyber-light">22</span>
+                    </div>
+                    <div class="price-item price-COP bg-cyber-card/60 p-2 rounded-xl border border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-gray-300">🇨🇴 COP</span>
+                        <span class="font-orbitron font-bold text-cyber-light">21.340</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 4: LOGOS PERSONALIZADOS -->
+            <div class="product-card bg-cyber-inner rounded-2xl p-4 sm:p-5 border border-cyber-primary/25 hover:border-cyber-primary/60                   <span class="text-xl">🚀</span>
                         </div>
                         <div>
                             <div class="flex items-center gap-2">
